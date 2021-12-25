@@ -7,6 +7,41 @@
 	<title>Итоговая работа по модулю</title>
 </head>
 <body>
+<div class="popup shown">
+  <div class="popup-form">
+    <button class="close"><img src="svg/form-x.svg" alt="крестик"></button>
+    <h3 class="aside-tittle trends-tittle">ваш фидбек</h3>
+    <form class="survey" action="#" name="popup">
+        <h4 class="form-question-tittle">Как часто вы заходите на сайт?</h4>
+        <label>
+          <select class="form-question-one-box">
+            <option selected>Почти каждый день</option>
+            <option>Раз в несколько дней</option>
+            <option>Раз в несколько недель</option>
+            <option>Несколько раз в год</option>
+          </select>
+        </label>  
+        <div class="radio-hint">
+          <h4 class="form-question-tittle">Вы подписаны на e-mail рассылку?</h4>
+          <label class="form-question">
+            <input type="radio" class="radio" name="subscription" value="yes">
+            <span class="form-radio-tittle">Да</span>
+          </label>
+          <label class="form-question">
+            <input type="radio" class="radio" name="subscription" value="no">
+            <span class="form-radio-tittle">Нет</span>
+          </label>
+        </div>
+        <div class="form-textarea">
+          <h4 class="form-question-tittle">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</h4>
+          <label class="">
+            <textarea class="textarea" placeholder="Может, больше рецептов?" required></textarea>
+          </label>
+        </div>
+            <button class="mailing-button" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>  
 <header class="header" lang="ru">
   <div class="container">
     <nav class="nav">
@@ -42,10 +77,10 @@
   <div class="list-trends">
     <article class="trend one">
       <div class="trend-link">
-        <div class="row-link">
-          <a href="#" class="item-link">lifestyle</a>
-          <a href="#" class="item-link">interior</a>
-        </div>
+        <ul class="row-link">
+          <li><a href="#" class="item-link">lifestyle</a></li>
+          <li><a href="#" class="item-link">interior</a></li>
+        </ul>
         <h3 class="trend-tittle">
           <a href="#">сейчас в тренде: сад на подоконнике</a>
         </h3>
@@ -74,10 +109,10 @@
     </article>
     <article class="trend four">
       <div class="trend-link">
-        <div class="row-link">
-          <a href="#" class="item-link">food</a>
-          <a href="#" class="item-link">health</a>
-        </div>
+        <ul class="row-link">
+          <li><a href="#" class="item-link">food</a></li>
+          <li><a href="#" class="item-link">health</a></li>
+        </ul>
         <h3 class="trend-tittle">
           <a href="#">сейчас в тренде: сколько витамина c в лимонах?</a>
         </h3>
@@ -92,10 +127,10 @@
         <img src="img/last-post1.jpg" alt="10 мест, ради которых стоит проснуться на рассвете">
       </div>
       <section class="preview-desc">
-        <div class="row-link">
-          <a href="#0" class="item-link">travel</a>
-          <a href="#0" class="item-link">health</a>
-        </div>
+        <ul class="row-link">
+          <li><a href="#0" class="item-link">travel</a></li>
+          <li><a href="#0" class="item-link">health</a></li>
+        </ul>
         <h3 class="preview-title">
           <a class="preview-title-link" href="#0">10 мест, ради которых стоит проснуться на рассвете</a>
         </h3>
@@ -113,10 +148,10 @@
         <img src="img/last-post2.jpg" alt="йога для начинающих в домашних условиях">
       </div>
       <section class="preview-desc">
-        <div class="row-link">
-          <a href="#0" class="item-link">health</a>
-          <a href="#0" class="item-link">lifestyle</a>
-        </div>
+        <ul class="row-link">
+          <li><a href="#0" class="item-link">health</a></li>
+          <li><a href="#0" class="item-link">lifestyle</a></li>
+        </ul>
         <h3 class="preview-title">
           <a class="preview-title-link" href="#0">йога для начинающих в домашних условиях</a>
         </h3>
@@ -134,9 +169,9 @@
         <img src="img/last-post3.jpg" alt="Лучшие музыкальные фестивали этого лета">
       </div>
       <section class="preview-desc">
-        <div class="row-link">
-          <a href="#0" class="item-link">musik</a>
-        </div>
+        <ul class="row-link">
+          <li><a href="#0" class="item-link">musik</a></li>
+        </ul>
         <h3 class="preview-title">
           <a class="preview-title-link" href="#0">Лучшие музыкальные фестивали этого лета.</a>
         </h3>
@@ -155,10 +190,10 @@
         <img src="img/last-post4.jpg" alt="наукоемкий подход к кулинарии">
       </div>
       <section class="preview-desc">
-        <div class="row-link">
-          <a href="#0" class="item-link">lyfestyle</a>
-          <a href="#0" class="item-link">food</a>
-        </div>
+        <ul class="row-link">
+          <li><a href="#0" class="item-link">lyfestyle</a></li>
+          <li><a href="#0" class="item-link">food</a></li>
+        </ul>
         <h3 class="preview-title">
           <a class="preview-title-link" href="#0">наукоемкий подход к кулинарии</a>
         </h3>
@@ -176,11 +211,11 @@
         <img src="img/last-post5.jpg" alt="10 мест, ради которых стоит проснуться на рассвете">
       </div>
       <section class="preview-desc">
-        <div class="row-link">
-          <a href="#0" class="item-link">lyfestyle</a>
-          <a href="#0" class="item-link">interior</a>
-          <a href="#0" class="item-link">art</a>
-        </div>
+        <ul class="row-link">
+          <li><a href="#0" class="item-link">lyfestyle</a></li>
+          <li><a href="#0" class="item-link">interior</a></li>
+          <li><a href="#0" class="item-link">art</a></li>
+        </ul>
         <h3 class="preview-title">
           <a class="preview-title-link" href="#0">делаем модные принты на подушках для интерьера</a>
         </h3>
@@ -198,10 +233,10 @@
         <img src="img/last-post1.jpg" alt="10 мест, ради которых стоит проснуться на рассвете">
       </div>
       <section class="preview-desc">
-        <div class="row-link">
-          <a href="#0" class="item-link">travel</a>
-          <a href="#0" class="item-link">lyfestyle</a>
-        </div>
+        <ul class="row-link">
+          <li><a href="#0" class="item-link">travel</a></li>
+          <li><a href="#0" class="item-link">lyfestyle</a></li>
+        </ul>
         <h3 class="preview-title">
           <a class="preview-title-link" href="#0">Как в первый раз отправиться в горы?</a>
         </h3>
@@ -219,10 +254,10 @@
         <img src="img/last-post4.jpg" alt="10 мест, ради которых стоит проснуться на рассвете">
       </div>
       <section class="preview-desc">
-        <div class="row-link">
-          <a href="#0" class="item-link">lyfestyle</a>
-          <a href="#0" class="item-link">food</a>
-        </div>
+        <ul class="row-link">
+          <li><a href="#0" class="item-link">lyfestyle</a></li>
+          <li><a href="#0" class="item-link">food</a></li>
+        </ul>
         <h3 class="preview-title">
           <a class="preview-title-link" href="#0">Наукоемкий подход к кулинарии</a>
         </h3>
@@ -365,11 +400,11 @@
         </div>
         <div class="description">
           <h3 class="preview-title-link">подушки на диван</h3>
-          <p class="shop-description-text">Набор из двух подушек с модными принтами. Видео о создании <a class="" href="#">здесь</a></p>
+          <p class="shop-description-text">Набор из двух подушек с модными принтами. Видео о создании <a class="item-link" href="#">здесь</a></p>
           <div class="cost">
             <div>
-              <p class="old-cost"></p>
-              <p class="new-cost"></p>
+              <p class="old-cost">1000р</p>
+              <p class="new-cost">800р</p>
             </div>
             <a class="shop-link" href="#">в магазин</a>
           </div>
@@ -381,8 +416,13 @@
         </div>
         <div class="description">
           <h3 class="preview-title-link">кукла «зайчик»</h3>
-          <p class="shop-description-text">Интерьерная рукодельная кукла «зайчик», созданию которой посвящена <a class="" href="#">весенняя серия постов</a> в блоге и нгесколько подкастов.</p>
-          <div>
+          <p class="shop-description-text">Интерьерная рукодельная кукла «зайчик», созданию которой посвящена <a class="item-link" href="#">весенняя серия постов</a> в блоге и нгесколько подкастов.</p>
+          <div class="cost">
+            <div>
+              <p class="old-cost"></p>
+              <p class="new-cost">3500р</p>
+            </div>
+            <a class="shop-link" href="#">в магазин</a>
           </div>
         </div>
       </article>
@@ -392,8 +432,13 @@
         </div>
         <div class="description">
           <h3 class="preview-title-link">шестиугальная рамка</h3>
-          <p class="shop-description-text">Необычная рамка для украшения дома из видео <a class="" href="#">«Как сделать рамку из подручных средств за 30 минут»</a></p>
-          <div>
+          <p class="shop-description-text">Необычная рамка для украшения дома из видео <a class="item-link" href="#">«Как сделать рамку из подручных средств за 30 минут»</a></p>
+          <div class="cost">
+            <div>
+              <p class="old-cost">500р</p>
+              <p class="new-cost">400р</p>
+            </div>
+            <a class="shop-link" href="#">в магазин</a>
           </div>
         </div>
       </article>
