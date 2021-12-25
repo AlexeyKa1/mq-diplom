@@ -18,6 +18,130 @@
   font-display: swap;
 }
 
+.popup {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  top: 0;
+}
+
+.shown {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-form {
+  width: 390px;
+  min-height: 590px;
+  background-color: #ffffff;
+  position: relative;
+  padding-top: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  background: none;
+  border: none;
+}
+
+.survey {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.form-question-tittle, .form-radio-tittle, .textarea {
+  font-size: 13px;
+  font-family: OpenSansRegular, Arial, sans-serif;
+  margin-bottom: 8px;
+}
+
+.form-question-one-box {
+  width: 330px;
+  height: 50px;
+  border: 0;
+  background-color: #f4f7f6;
+  padding-left: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../svg/form-arrows.svg");
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  background-size: 12px;
+}
+
+.form-question-one-box:focus {
+  outline: 1px solid #b59f5b;
+}
+
+.radio-hint {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-radio-tittle::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  background-image: url("../svg/form-empty-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center  center;
+  background-size: 20px;
+}
+
+.form-question {
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.form-question:nth-of-type(n+2) {
+    margin-left: 15px;
+}
+
+.radio {
+    position: absolute;
+}
+
+.radio:checked ~ .form-radio-tittle::before {
+  background-image: url("../svg/form-circle.svg");
+}
+
+.form-textarea {
+  margin-bottom: 26px;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 132px;
+  border: 0;
+  background-color: #f4f7f6;
+  padding: 20px 20px 0 20px;
+}
+
+.textarea:focus {
+  outline: 1px solid #b59f5b;
+}
+
 .header {
   position: relative;
   z-index: 0;
@@ -279,6 +403,9 @@ h3.trends-tittle {
 
 .item-link:hover{
   text-decoration: underline;
+}
+ul.row-link li{
+  list-style: none;
 }
 
 .preview-title {
@@ -557,7 +684,7 @@ h3.trends-tittle {
 }
 
 .shop-description-text {
-  margin-top: 20px;
+  margin-top: 5px;
   margin-bottom: 20px;
   font-family: OpenSansRegular, Arial, sans-serif;
   font-size: 15px;
@@ -567,9 +694,34 @@ h3.trends-tittle {
 
 .cost {
   display: flex;
+  justify-content: space-between;
 }
 
+.old-cost {
+  height: 14px;
+  font-family: OpenSansBold, Arial, sans-serif;
+  font-size: 14px;
+  text-decoration: line-through;
+}
 
+.new-cost {
+  font-family: OpenSansBold, Arial, sans-serif;
+  font-size: 20px;
+}
+
+.shop-link {
+  display: block;
+  width: 141px;
+  height: 48px;
+  padding-top: 14px;
+  background-color: #b59f5b;
+  text-align: center;
+  font-family: OpenSansBold, Arial, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
 .footer-wrapper {
   width: 1200px;
@@ -634,4 +786,16 @@ h3.trends-tittle {
   font-size: 12px;
   text-decoration: none;
   color: #b0b0b0;
+}
+
+@media (min-width: 1201px) {
+
+}
+
+@media (max-width: 641px) and (min-width: 1200px) {
+
+}
+
+@media (max-width: 640px) {
+
 }
